@@ -7,7 +7,7 @@ const cors = require("cors");
 const app = express();
 
 // Import router 
-// const contactsRouter = require("./app/routes/contact.route");
+const contactsRouter = require("./app/routes/contact.route");
 
 // Sử dụng cors
 app.use(cors());
@@ -23,7 +23,7 @@ app.get("/", (req, res) => {
 })
 
 // Các route quản lý liên hệ sẽ được dùng khi đường dẫn bắt đầu là /api/contacts.
-// app.use("/api/contacts", contactsRouter);
+app.use("/api/contacts", contactsRouter);
 // // handle 404 response
 
 // app.use((req, res, next) => {
