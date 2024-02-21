@@ -1,27 +1,27 @@
-exports. create = async (req, res) => {
+exports.create = (req, res) => {
     res.send({message: "create handler"});
 }
 
-exports.findOne = async (req, res) => {
-    res.send({message: "findOne handler"});
-}
-
-exports.findAll = async (req, res) => {
+exports.findAll = (req, res) => {
     res.send({message: "findAll handler"});
 }
 
-exports.update = async (req, res) => {
+exports.findOne = (req, res) => {
+    res.send({message: "findOne handler"});
+}
+
+exports.update = (req, res) => {
     res.send({message: "update handler"});
 }
 
-exports.delete = async (req, res) => {
+exports.delete = (req, res) => {
     res.send({message: "delete handler"});
 }
 
-exports.deleteAll = async (req, res) => {
+exports.deleteAll = (req, res) => {
     res.send({message: "deleteAll handler"});
 }
 
-exports.FindAllFavorite = async (req, res) => {
-    res.send({message: "FindAllFavorite handler"});
+exports.findAllFavorite = (req, res) => {
+    res.send({message: "findAllFavorite handler"});
 }
